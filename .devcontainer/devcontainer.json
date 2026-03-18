@@ -1,0 +1,31 @@
+{
+    "name": "Yocto Project",
+    "dockerFile": "Dockerfile", // Path to your Dockerfile
+    "runArgs": [
+      "--network=host"
+  ],
+  "containerEnv": {
+        "LANG": "en_US.UTF-8",
+        "LC_ALL": "en_US.UTF-8"
+    },
+    "customizations":{
+      "vscode": {
+        "extensions": [
+          "ms-vscode.cpptools", // C/C++ extension for VSCode
+          "ms-python.python",
+          "cschlosser.doxdocgen",
+          "jbenden.c-cpp-flylint",
+          "ms-vscode.makefile-tools"
+        ],
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash",
+          "notebook.file.autoSave": "afterDelay",
+          "notebook.file.autoSaveDelay": 1000
+  
+        }
+      }
+    }
+    "postCreateCommand": "apt-get install -y locales && locale-gen en_US.UTF-8",
+    // "runArgs": ["--user", "vscode", "--privileged"],
+    // "workspaceMount": "source=/workspace,destination=/workspace,type=bind,consistency=cached"
+  }
