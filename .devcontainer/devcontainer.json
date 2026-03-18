@@ -24,7 +24,7 @@
   
         }
       }
-    }
+    },
     "postCreateCommand": "apt-get install -y locales && locale-gen en_US.UTF-8",
     // "runArgs": ["--user", "vscode", "--privileged"],
     // "workspaceMount": "source=/workspace,destination=/workspace,type=bind,consistency=cached"
