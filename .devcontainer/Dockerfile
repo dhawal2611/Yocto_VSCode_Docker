@@ -1,6 +1,8 @@
 # Use a base image
 FROM ubuntu:20.04
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Install required dependencies
 RUN apt-get update && \
     apt-get install -y wget && \
@@ -18,7 +20,7 @@ RUN apt-get update && \
     net-tools \
     python \
     python3 \
-    python3-pip \
+    python3-pip \ 
     gawk diffstat unzip texinfo gcc-multilib \
     chrpath socat cpio \
     python3-pexpect xz-utils debianutils iputils-ping \

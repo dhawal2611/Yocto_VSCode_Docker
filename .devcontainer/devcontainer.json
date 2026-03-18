@@ -4,10 +4,10 @@
     "runArgs": [
       "--network=host"
   ],
-  "containerEnv": {
-        "LANG": "en_US.UTF-8",
-        "LC_ALL": "en_US.UTF-8"
-    },
+  // "containerEnv": {
+  //       "LANG": "en_US.UTF-8",
+  //       "LC_ALL": "en_US.UTF-8"
+  //   },
     "customizations":{
       "vscode": {
         "extensions": [
@@ -24,8 +24,8 @@
   
         }
       }
-    },
-    "postCreateCommand": "apt-get install -y locales && locale-gen en_US.UTF-8",
+    }
+    // "postCreateCommand": "apt-get install -y locales && locale-gen en_US.UTF-8",
     // "runArgs": ["--user", "vscode", "--privileged"],
     // "workspaceMount": "source=/workspace,destination=/workspace,type=bind,consistency=cached"
   }
