@@ -4,6 +4,8 @@
     "runArgs": [
       "--network=host"
   ],
+  "remoteUser": "yocto",
+  "containerUser": "yocto",
   // "containerEnv": {
   //       "LANG": "en_US.UTF-8",
   //       "LC_ALL": "en_US.UTF-8"
