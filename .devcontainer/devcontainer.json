@@ -24,7 +24,10 @@
           "notebook.file.autoSave": "afterDelay",
           "notebook.file.autoSaveDelay": 1000
   
-        }
+        },
+        "storage-opts": [
+          "dm.basesize=60G"
+        ]
       }
     }
     // "postCreateCommand": "apt-get install -y locales && locale-gen en_US.UTF-8",
